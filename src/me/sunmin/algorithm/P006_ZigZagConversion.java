@@ -3,10 +3,11 @@
 //And then read line by line: "PAHNAPLSIIGYIR"
 //
 //Write the code that will take a string and make this conversion given a number of rows:
+//Runtime: 36 ms, faster than 94.94% of Java online submissions for ZigZag Conversion.
 
 package me.sunmin.algorithm;
 
-public class ZigZagConversion {
+public class P006_ZigZagConversion {
 	
 	static public String convert(String s, int numRows) {
 		if (numRows == 1)	return s;
@@ -43,7 +44,7 @@ public class ZigZagConversion {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println(ZigZagConversion.convert("ABCD", 3));
-		System.out.println(ZigZagConversion.convert("PAYPALISHIRING", 4));
+		System.out.println(P006_ZigZagConversion.convert("ABCD", 3));
+		System.out.println(P006_ZigZagConversion.convert("PAYPALISHIRING", 4));
 	}
 }

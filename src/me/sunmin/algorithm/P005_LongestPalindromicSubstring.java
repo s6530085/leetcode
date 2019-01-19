@@ -1,9 +1,10 @@
 //https://leetcode.com/problems/longest-palindromic-substring/
 //Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+//Runtime: 24 ms, faster than 64.44% of Java online submissions for Longest Palindromic Substring.
 
 package me.sunmin.algorithm;
 
-public class LongestPalindromicSubstring {
+public class P005_LongestPalindromicSubstring {
 	
 	static public boolean isPalindrome(char[] cs, int begin, int end) {
 		if (begin == end) return false;
@@ -52,7 +53,7 @@ public class LongestPalindromicSubstring {
 		int longestEnd = 0;
 		for (int i = 0; i < cs.length; i++) {
 //			if (longestEnd - longestBegin > cs.length - i) break;
-			int[] brace = LongestPalindromicSubstring.palindromeBrace(cs, i);
+			int[] brace = P005_LongestPalindromicSubstring.palindromeBrace(cs, i);
 			if (brace[1] - brace[0] > longestEnd - longestBegin) {
 				longestBegin = brace[0];
 				longestEnd = brace[1];
@@ -67,14 +68,14 @@ public class LongestPalindromicSubstring {
 		
 		// TODO Auto-generated method stub
 //		String s = LongestPalindromicSubstring.longestPalindrome("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-		String s = LongestPalindromicSubstring.longestPalindrome("abababa");
-		s = LongestPalindromicSubstring.longestPalindrome("a");
-		s = LongestPalindromicSubstring.longestPalindrome("aba");
-		s = LongestPalindromicSubstring.longestPalindrome("ababa");
-		s = LongestPalindromicSubstring.longestPalindrome("abababa");
-		s = LongestPalindromicSubstring.longestPalindrome("ababababa");
-		s = LongestPalindromicSubstring.longestPalindrome("abababababa");
-		s = LongestPalindromicSubstring.longestPalindrome("abccba");
+		String s = P005_LongestPalindromicSubstring.longestPalindrome("abababa");
+		s = P005_LongestPalindromicSubstring.longestPalindrome("a");
+		s = P005_LongestPalindromicSubstring.longestPalindrome("aba");
+		s = P005_LongestPalindromicSubstring.longestPalindrome("ababa");
+		s = P005_LongestPalindromicSubstring.longestPalindrome("abababa");
+		s = P005_LongestPalindromicSubstring.longestPalindrome("ababababa");
+		s = P005_LongestPalindromicSubstring.longestPalindrome("abababababa");
+		s = P005_LongestPalindromicSubstring.longestPalindrome("abccba");
 		int a = 0;
 	}
 

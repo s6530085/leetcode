@@ -1,9 +1,10 @@
 //https://leetcode.com/problems/reverse-integer/
 //Given a 32-bit signed integer, reverse digits of an integer.
+//Runtime: 15 ms, faster than 99.78% of Java online submissions for Reverse Integer.
 
 package me.sunmin.algorithm;
 
-public class ReverseInteger {
+public class P007_ReverseInteger {
 	
 	static public int reverse(int x) {
         if (x == Integer.MIN_VALUE || x == 0) {
@@ -35,11 +36,11 @@ public class ReverseInteger {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int i = ReverseInteger.reverse(1534236469);
-		i = ReverseInteger.reverse(321);
-		i = ReverseInteger.reverse(-123);
-		i = ReverseInteger.reverse(120);
-		i = ReverseInteger.reverse(0);
+		int i = P007_ReverseInteger.reverse(1534236469);
+		i = P007_ReverseInteger.reverse(321);
+		i = P007_ReverseInteger.reverse(-123);
+		i = P007_ReverseInteger.reverse(120);
+		i = P007_ReverseInteger.reverse(0);
 	}
 
 }

@@ -13,10 +13,11 @@
 //
 //Only the space character ' ' is considered as whitespace character.
 //Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231,  231 − 1]. If the numerical value is out of the range of representable values, INT_MAX (231 − 1) or INT_MIN (−231) is returned.
+//Runtime: 17 ms, faster than 99.58% of Java online submissions for Reverse Integer.
 
 package me.sunmin.algorithm;
 
-public class StringToInteger {
+public class P008_StringToInteger {
 	
 	static public int myAtoi(String str) {
         boolean negative = false;
@@ -84,12 +85,12 @@ public class StringToInteger {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a = StringToInteger.myAtoi("-42");
-		a = StringToInteger.myAtoi("   -42");
-		a = StringToInteger.myAtoi("4193 with words");
-		a = StringToInteger.myAtoi("words and 987");
-		a = StringToInteger.myAtoi("-91283472332");
-		a = StringToInteger.myAtoi("  0000000000012345678");
+		int a = P008_StringToInteger.myAtoi("-42");
+		a = P008_StringToInteger.myAtoi("   -42");
+		a = P008_StringToInteger.myAtoi("4193 with words");
+		a = P008_StringToInteger.myAtoi("words and 987");
+		a = P008_StringToInteger.myAtoi("-91283472332");
+		a = P008_StringToInteger.myAtoi("  0000000000012345678");
 		
 	}
 

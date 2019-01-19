@@ -2,7 +2,7 @@
 //You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 //
 //You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-
+//todosm
 package me.sunmin.algorithm;
 
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ class ListNode {
 	ListNode(int x) { val = x; }
 }
 
-public class AddTwoNumbers {
+public class P002_AddTwoNumbers {
 	
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 		boolean carry = false;
@@ -44,32 +44,5 @@ public class AddTwoNumbers {
         }
         return head;
     }
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		ListNode l1 = new ListNode(9);
-		
-		ListNode l2 = new ListNode(1);
-		ListNode l22 = new ListNode(9);
-		ListNode l222 = new ListNode(9);
-		ListNode l2222 = new ListNode(9);
-		ListNode l22222 = new ListNode(9);
-		ListNode l222222 = new ListNode(9);
-		ListNode l2222222 = new ListNode(9);
-		ListNode l22222222 = new ListNode(9);
-		ListNode l222222222 = new ListNode(9);
-		ListNode l2222222222 = new ListNode(9);
-		l2.next = l22;
-		l22.next = l222;
-		l222.next = l2222;
-		l2222.next = l22222;
-		l22222.next = l222222;
-		l222222.next = l2222222;
-		l2222222.next = l22222222;
-		l22222222.next = l222222222;
-		l222222222.next = l2222222222;
-		
-		new AddTwoNumbers().addTwoNumbers(l1, l2);
-	}
 
 }

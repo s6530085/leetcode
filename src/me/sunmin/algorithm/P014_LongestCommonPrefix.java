@@ -1,8 +1,9 @@
 //https://leetcode.com/problems/longest-common-prefix/
+//Runtime: 7 ms, faster than 98.29% of Java online submissions for Container With Most Water.
 
 package me.sunmin.algorithm;
 
-public class LongestCommonPrefix {
+public class P014_LongestCommonPrefix {
 	static public String longestCommonPrefix(String[] strs) {
         StringBuilder sb = new StringBuilder();
         int length = Integer.MAX_VALUE;
@@ -26,8 +27,8 @@ public class LongestCommonPrefix {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String[] strs = {"dog","racecar","car"};
-		String s = LongestCommonPrefix.longestCommonPrefix(strs);
-		s = LongestCommonPrefix.longestCommonPrefix(new String[] {"flower","flow","flight"});
+		String s = P014_LongestCommonPrefix.longestCommonPrefix(strs);
+		s = P014_LongestCommonPrefix.longestCommonPrefix(new String[] {"flower","flow","flight"});
 	}
 
 }

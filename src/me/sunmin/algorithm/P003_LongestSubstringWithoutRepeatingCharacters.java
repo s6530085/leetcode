@@ -2,8 +2,9 @@ package me.sunmin.algorithm;
 
 //https://leetcode.com/problems/longest-substring-without-repeating-characters/
 //Given a string, find the length of the longest substring without repeating characters.
+//Runtime: 30 ms, faster than 98.48% of Java online submissions for Longest Substring Without Repeating Characters.
 
-public class LongestSubstringWithoutRepeatingCharacters {
+public class P003_LongestSubstringWithoutRepeatingCharacters {
 	
 	static public int lengthOfLongestSubstring(String s) {
         int maxLength = 0;
@@ -38,10 +39,10 @@ public class LongestSubstringWithoutRepeatingCharacters {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a = LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring(" ");
-		a = LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("bbbbb");
-		a = LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("pwwkew");
-		a = LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("abcdefa");
+		int a = P003_LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring(" ");
+		a = P003_LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("bbbbb");
+		a = P003_LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("pwwkew");
+		a = P003_LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("abcdefa");
 	}
 
 }
