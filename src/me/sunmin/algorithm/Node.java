@@ -12,4 +12,9 @@ public class Node {
         val = _val;
         children = _children;
     }
+    
+    public static void main(String[] args) {
+    	String path = "D:\\test";
+    	
+    }
 }
