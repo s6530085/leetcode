@@ -19,7 +19,6 @@ public class P006_ZigZagConversion {
         
         for (int index = 0; index < l; index++) {
         	char c = s.charAt(index);
-        	// 根据index算出偏移量
         	int offsetCol = ((index+1) / mod + ((index+1) % mod == 0 ? 0 : 1) - 1) * (numRows - 1);
         	int offset = index % mod;
         	if (offset < numRows) {
