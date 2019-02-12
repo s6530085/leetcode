@@ -13,8 +13,4 @@ public class Node {
         children = _children;
     }
     
-    public static void main(String[] args) {
-    	String path = "D:\\test";
-    	
-    }
 }
