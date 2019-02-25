@@ -1,6 +1,7 @@
 package me.sunmin.algorithm;
 //https://leetcode.com/problems/valid-palindrome/
-//todosm fuckyou
+//Runtime: 5 ms, faster than 77.86% of Java online submissions for Valid Palindrome.
+
 public class P125_ValidPalindrome {
 	
 	public boolean isPalindrome(String s) {
@@ -10,7 +11,7 @@ public class P125_ValidPalindrome {
 		while (lo < hi) {
 			char cl = cs[lo];
 			char ch = cs[hi];
-			if ((cl >= 'a' && cl <= 'z') && (ch >= 'a' && ch <= 'z')) {
+			if (Character.isLetterOrDigit(cl) && Character.isLetterOrDigit(ch)) {
 				if (cl != ch) {
 					return false;
 				}
@@ -20,10 +21,10 @@ public class P125_ValidPalindrome {
 				}
 			}
 			else {
-				if (cl < 'a' || cl > 'z') {
+				if (!Character.isLetterOrDigit(cl)) {
 					lo++;
 				}
-				if (ch < 'a' || ch > 'z') {
+				if (!Character.isLetterOrDigit(ch)) {
 					hi--;
 				}
 			}
@@ -34,7 +35,7 @@ public class P125_ValidPalindrome {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		P125_ValidPalindrome v = new P125_ValidPalindrome();
-		boolean b = v.isPalindrome("OP");
+		boolean b = v.isPalindrome("A man, a plan, a canal: Panama");
 
 	}
 
