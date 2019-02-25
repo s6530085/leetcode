@@ -20,7 +20,7 @@ public class Node {
 //    		l.add(remain);
 //    		list.add(l);
 //    	}
-    	for (int i = 2; i <= remain; i++) {
+    	for (int i = 2; i < remain; i++) {
     		if (remain%i==0) {
     			List<Integer> nl = new ArrayList<Integer>(l);
     			nl.add(i);
@@ -37,7 +37,7 @@ public class Node {
     
     public static void main(String[] args) {
     	List<List<Integer>>list = new ArrayList<List<Integer>>();
-    	int remain = 8;
+    	int remain = 16;
 //    	list.add(Arrays.asList(new Integer[] {1, remain}));
 //    	list.add(Arrays.asList(new Integer[] {remain, 1}));
     	p(remain, new ArrayList<Integer>(), list);
