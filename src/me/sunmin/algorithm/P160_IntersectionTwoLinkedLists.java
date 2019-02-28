@@ -1,24 +1,33 @@
 package me.sunmin.algorithm;
 //https://leetcode.com/problems/intersection-of-two-linked-lists/
-//
-import java.util.HashSet;
-import java.util.Set;
+//Runtime: 1 ms, faster than 100.00% of Java online submissions for Intersection of Two Linked Lists.
 
 public class P160_IntersectionTwoLinkedLists {
 	public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-		Set<ListNode>set = new HashSet<ListNode>();
-		ListNode n = headA;
-		while(n != null) {
-			set.add(n);
-			n = n.next;
-		}
-		n = headB;
-		while(n != null) {
-			if (set.contains(n)) {
-				return n;
+		ListNode na = headA;
+		ListNode nb = headB;
+		int zeroCount = 0;
+		while(zeroCount < 3) {
+			if (na == nb) {
+				return na;
 			}
-			n = n.next;
+			if (na != null) {
+				na = na.next;
+			}
+			else {
+				zeroCount++;
+				na = headB;
+			}
+			if (nb != null) {
+				nb = nb.next;
+			}
+			else {
+				zeroCount++;
+				nb = headA;
+			}
+			
 		}
+		
 		return null;
     }
 }
