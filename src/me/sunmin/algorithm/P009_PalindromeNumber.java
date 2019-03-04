@@ -1,5 +1,6 @@
 //https://leetcode.com/problems/palindrome-number/
 //Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+//Runtime: 71 ms, faster than 99.88% of Java online submissions for Palindrome Number.
 
 package me.sunmin.algorithm;
 

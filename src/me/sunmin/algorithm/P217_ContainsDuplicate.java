@@ -54,30 +54,6 @@ public class P217_ContainsDuplicate {
 		 return -1;
 	 }
 	 
-	 public int[] findDiagonalOrder(int[][] matrix) {
-		 int r[] = new int[matrix.length * matrix[0].length];
-		 boolean up = true;
-		 int i = 0;
-		 int j = 0;
-		 int index = 0;
-		 while(index < r.length) {
-			 r[index] = matrix[i][j];
-			 index++;
-			 if (up) {
-				 if (i == 0 || j == matrix[0].length - 1) {
-					 
-					 up = false;
-				 }
-				 else {
-					 
-				 }
-			 }
-			 else {
-				 
-			 }
-		 }
-		 return r;
-	 }
 	 
 	 public static void main (String[] args) {
 		 P217_ContainsDuplicate d= new P217_ContainsDuplicate();
