@@ -1,7 +1,6 @@
 package me.sunmin.algorithm;
-
-import java.util.HashSet;
-import java.util.Set;
+//https://leetcode.com/problems/bulls-and-cows/
+//Runtime: 1 ms, faster than 100.00% of Java online submissions for Bulls and Cows.
 
 public class P299_BullsAndCows {
 	public String getHint(String secret, String guess) {
