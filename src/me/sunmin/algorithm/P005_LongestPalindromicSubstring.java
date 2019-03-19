@@ -21,7 +21,6 @@ public class P005_LongestPalindromicSubstring {
 	static public int[] palindromeBrace(char[] cs, int middle) {
 		int space = Math.min(cs.length - middle - 1, middle);
 		int[] brace = {middle, middle+1};
-		// 回文可能是奇数也可能是偶数哦
 		for (int i = 1; i <= space; i++) {
 			if (cs[middle-i] == cs[middle+i]) {
 				brace[0] = middle-i;
@@ -53,7 +52,7 @@ public class P005_LongestPalindromicSubstring {
 		int longestEnd = 0;
 		for (int i = 0; i < cs.length; i++) {
 //			if (longestEnd - longestBegin > cs.length - i) break;
-			int[] brace = P005_LongestPalindromicSubstring.palindromeBrace(cs, i);
+			int[] brace = palindromeBrace(cs, i);
 			if (brace[1] - brace[0] > longestEnd - longestBegin) {
 				longestBegin = brace[0];
 				longestEnd = brace[1];
@@ -62,11 +61,10 @@ public class P005_LongestPalindromicSubstring {
 		
 		return s.substring(longestBegin, longestEnd);
     }
+	
 
 	public static void main(String[] args) {
 		
-		
-		// TODO Auto-generated method stub
 //		String s = LongestPalindromicSubstring.longestPalindrome("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 		String s = P005_LongestPalindromicSubstring.longestPalindrome("abababa");
 		s = P005_LongestPalindromicSubstring.longestPalindrome("a");
