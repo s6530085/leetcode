@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/longest-common-prefix/
-//Runtime: 7 ms, faster than 98.29% of Java online submissions for Container With Most Water.
+//Runtime: 4 ms, faster than 92.87% of Java online submissions for Longest Common Prefix.
 
 package me.sunmin.algorithm;
 
