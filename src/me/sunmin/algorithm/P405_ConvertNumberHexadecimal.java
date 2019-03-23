@@ -5,8 +5,8 @@ package me.sunmin.algorithm;
 public class P405_ConvertNumberHexadecimal {
 	
 	public String toHex(int num) {
-		char digits[] = "0123456789abcdef".toCharArray();
 		if (num == 0) return "";
+		char digits[] = "0123456789abcdef".toCharArray();
 		String digit = "";
 		while (num != 0) {
 			digit = digits[num&0xf] + digit;

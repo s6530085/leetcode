@@ -77,4 +77,11 @@ public class P013_Roman2Integer {
         }
         return sum;
     }
+	
+	
+	public static void main(String[] args) {
+		P013_Roman2Integer i = new P013_Roman2Integer();
+		int a =i.romanToInt("XIVXI");
+		
+	}
 }
