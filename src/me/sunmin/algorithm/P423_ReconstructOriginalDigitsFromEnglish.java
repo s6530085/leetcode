@@ -32,4 +32,9 @@ public class P423_ReconstructOriginalDigitsFromEnglish {
 		return sb.toString();
 	}
 	
+	public static void main(String[] args) {
+		
+		P423_ReconstructOriginalDigitsFromEnglish s = new P423_ReconstructOriginalDigitsFromEnglish();
+		String ss = s.originalDigits("zrezzotwnoez");
+	}
 }
